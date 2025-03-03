@@ -23,8 +23,8 @@ import {
   jobit,
   tripguide,
   threejs,
-  // sql,
-  // firebase,
+  sql,
+  firebase,
 } from "../assets";
 
 export const navLinks = [
@@ -94,14 +94,14 @@ const technologies = [
     name: "git",
     icon: git,
   },
-  // {
-  //   name: "Sql",
-  //   icon: sql,
-  // },
-  // {
-  //   name: "firebase",
-  //   icon: firebase,
-  // },
+  {
+    name: "Sql",
+    icon: sql,
+  },
+  {
+    name: "firebase",
+    icon: firebase,
+  },
 ];
 
 const experiences = [
