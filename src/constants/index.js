@@ -23,6 +23,8 @@ import {
   jobit,
   tripguide,
   threejs,
+  // sql,
+  // firebase,
 } from "../assets";
 
 export const navLinks = [
@@ -73,16 +75,8 @@ const technologies = [
     icon: javascript,
   },
   {
-    name: "TypeScript",
-    icon: typescript,
-  },
-  {
     name: "React JS",
     icon: reactjs,
-  },
-  {
-    name: "Redux Toolkit",
-    icon: redux,
   },
   {
     name: "Tailwind CSS",
@@ -97,74 +91,57 @@ const technologies = [
     icon: mongodb,
   },
   {
-    name: "Three JS",
-    icon: threejs,
-  },
-  {
     name: "git",
     icon: git,
   },
-  {
-    name: "figma",
-    icon: figma,
-  },
-  {
-    name: "docker",
-    icon: docker,
-  },
+  // {
+  //   name: "Sql",
+  //   icon: sql,
+  // },
+  // {
+  //   name: "firebase",
+  //   icon: firebase,
+  // },
 ];
 
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
+    title: "MERN Stack Developer Intern",
+    company_name: "Softapper Tech Solutions",
     icon: starbucks,
     iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    date: "2024",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Engineered a chat application with user authentication, supporting both single and group chats.",
+      "Secured the application using bcrypt.js for password hashing and jsonwebtoken for user authentication.",
+      "Developed and maintained web applications using MERN stack technologies.",
+      "Collaborated with senior developers to implement robust backend solutions.",
     ],
   },
   {
-    title: "React Native Developer",
-    company_name: "Tesla",
+    title: "Full Stack Developer",
+    company_name: "PacknChew",
     icon: tesla,
     iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
+    date: "June 2024",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Implemented a web app integrating table booking, boosting online bookings by 35% and reducing manual errors by 30%.",
+      "Improved UI/UX, leading to 60% increased user engagement and higher reservations.",
+      "Implemented Firebase backend for real-time seat status updates and efficient data management.",
+      "Designed responsive interfaces ensuring cross-browser compatibility.",
     ],
   },
   {
-    title: "Web Developer",
-    company_name: "Shopify",
+    title: "Full Stack Developer",
+    company_name: "DevHouse Hackathon - Charge IT",
     icon: shopify,
     iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
+    date: "March 2024",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
-    iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Achieved top-10 ranking out of 3000 projects by developing Charge IT, an end-to-end EV charging solution, within 36 hours.",
+      "Secured 2nd place in the Built for Bharat category with this innovative EV management system.",
+      "Developed real-time database models for dynamic rendering of available charging station booking slots.",
+      "Integrated Arduino hardware with React.js frontend and Firebase backend to create a complete solution for EV charging management.",
     ],
   },
 ];
@@ -198,41 +175,45 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "Charge IT",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "Complete EV Solutions developed as a SaaS for Charging Station Owners, providing real-time availability and booking information to eliminate user anxiety and reduce waiting time at charging stations.",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "tailwind",
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "firebase",
         color: "pink-text-gradient",
+      },
+      {
+        name: "arduino",
+        color: "orange-text-gradient",
       },
     ],
     image: carrent,
     source_code_link: "https://github.com/",
   },
   {
-    name: "Job IT",
+    name: "PacknChew",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "Official website for a Lucknow-based restaurant with integrated table booking, resulting in 35% boost in online bookings, 30% reduction in manual errors, and 60% increased user engagement.",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "tailwind",
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "firebase",
         color: "pink-text-gradient",
       },
     ],
@@ -240,21 +221,25 @@ const projects = [
     source_code_link: "https://github.com/",
   },
   {
-    name: "Trip Guide",
+    name: "Chat App",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "A full-featured chat application engineered during internship at Softapper Tech Solutions, supporting both single and group chats with secure user authentication using bcrypt.js and jsonwebtoken.",
     tags: [
       {
-        name: "nextjs",
+        name: "mern",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "mongodb",
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "express",
         color: "pink-text-gradient",
+      },
+      {
+        name: "node",
+        color: "orange-text-gradient",
       },
     ],
     image: tripguide,
